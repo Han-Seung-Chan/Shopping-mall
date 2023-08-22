@@ -6,13 +6,13 @@ import { routes } from './routes';
 import Gnb from './components/Gnb';
 
 const App = () => {
-  const elem = useRoutes(routes);
+  const element = useRoutes(routes);
   const queryClient = getClient();
 
   return (
     <QueryClientProvider client={queryClient}>
       <Gnb />
-      {elem}
+      {element}
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );

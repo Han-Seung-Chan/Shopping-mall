@@ -1,15 +1,15 @@
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
-import { QueryKeys, fetcher } from '../../queryClient';
 import ProductDetail from '../../components/product/Detail';
-import { ProductType } from '../../types/product';
+import { GET_PRODUCT, ProductType } from '../../graphql/products';
+import { graphqlFetcher, QueryKeys } from '../../queryClient';
 
 const ProductDetailPage = () => {
   const { id } = useParams<'id'>();
-
   const { data } = useQuery<ProductType>([QueryKeys.PRODUCTS, id], () =>
-    fetcher({ method: 'GET', path: `/products/${id}` })
+    graphqlFetcher<ProductType>(GET_PRODUCT, { id })
   );
+
   if (!data) return null;
 
   return (
