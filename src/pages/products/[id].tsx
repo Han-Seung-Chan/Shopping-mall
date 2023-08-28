@@ -1,8 +1,9 @@
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import ProductDetail from '../../components/product/Detail';
-import { GET_PRODUCT, ProductType } from '../../graphql/products';
+import { GET_PRODUCT } from '../../graphql/products';
 import { graphqlFetcher, QueryKeys } from '../../queryClient';
+import { ProductType } from '../../types/productType';
 
 const ProductDetailPage = () => {
   const { id } = useParams<'id'>();

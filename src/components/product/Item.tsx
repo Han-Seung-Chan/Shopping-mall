@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useMutation } from 'react-query';
-import { ProductType } from '../../graphql/products';
 import { graphqlFetcher } from '../../queryClient';
-import { ADD_CART, CartType } from '../../graphql/cart';
+import { ADD_CART } from '../../graphql/cart';
+import { ProductType } from '../../types/productType';
+import { CartType } from '../../types/cartType';
 
 const ProductItem = ({ id, imageUrl, price, title }: ProductType) => {
   const { mutate: addCart } = useMutation((id: string) =>

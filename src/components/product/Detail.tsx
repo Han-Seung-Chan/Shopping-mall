@@ -1,4 +1,4 @@
-import { ProductType } from '../../graphql/products';
+import { ProductType } from '../../types/productType';
 
 interface ProductDetailPropsType {
   item: ProductType;
