@@ -1,8 +1,9 @@
 import GlobalLayout from './pages/_layout';
 import Index from './pages/index';
-import ProductsList from './pages/products/index';
-import ProductsDetail from './pages/products/[id]';
+import ProductsListPage from './pages/products/list';
+import ProductsDetailPage from './pages/products/[id]';
 import CartList from './pages/cart/index';
+import PaymentPage from './pages/payment/index';
 
 export const routes = [
   {
@@ -10,9 +11,10 @@ export const routes = [
     element: <GlobalLayout />,
     children: [
       { path: '/', element: <Index />, index: true },
-      { path: '/products', element: <ProductsList />, index: true },
-      { path: '/products/:id', element: <ProductsDetail /> },
+      { path: '/products', element: <ProductsListPage />, index: true },
+      { path: '/products/:id', element: <ProductsDetailPage /> },
       { path: '/cart', element: <CartList />, index: true },
+      { path: '/payment', element: <PaymentPage />, index: true },
     ],
   },
 ];
@@ -22,4 +24,5 @@ export const pages = [
   { route: '/products' },
   { route: '/products/:id' },
   { route: '/cart' },
+  { route: '/payment' },
 ];

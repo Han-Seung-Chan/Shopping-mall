@@ -2,6 +2,7 @@ import { graphql } from 'msw';
 import { GET_CART, ADD_CART, UPDATE_CART, DELETE_CART } from '../graphql/cart';
 import { mockItem } from '../data/item';
 import { CartTypeIndexSignature } from '../types/cartType';
+import { EXECUTE_PAY } from '../graphql/payment';
 
 let cartData: CartTypeIndexSignature = {};
 
@@ -47,5 +48,12 @@ export const cartHandlers = [
     delete newData[id];
     cartData = newData;
     return res(ctx.data(id));
+  }),
+
+  graphql.mutation(EXECUTE_PAY, ({ variables: ids }, res, ctx) => {
+    ids.forEach((id: string) => {
+      delete cartData[id];
+    });
+    return res(ctx.data(ids));
   }),
 ];
