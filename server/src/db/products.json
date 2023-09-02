@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1",
+    "imageUrl": "https://i.pravatar.cc/200?img=1",
+    "price": 50000,
+    "title": "임시상품1",
+    "description": "임시상세내용1"
+  },
+  {
+    "id": "2",
+    "imageUrl": "https://i.pravatar.cc/200?img=2",
+    "price": 51000,
+    "title": "임시상품2",
+    "description": "임시상세내용2"
+  },
+  {
+    "id": "3",
+    "imageUrl": "https://i.pravatar.cc/200?img=3",
+    "price": 52000,
+    "title": "임시상품3",
+    "description": "임시상세내용3"
+  },
+  {
+    "id": "4",
+    "imageUrl": "https://i.pravatar.cc/200?img=4",
+    "price": 53000,
+    "title": "임시상품4",
+    "description": "임시상세내용4"
+  },
+  {
+    "id": "5",
+    "imageUrl": "https://i.pravatar.cc/200?img=5",
+    "price": 54000,
+    "title": "임시상품5",
+    "description": "임시상세내용5"
+  },
+  {
+    "id": "6",
+    "imageUrl": "https://i.pravatar.cc/200?img=6",
+    "price": 55000,
+    "title": "임시상품6",
+    "description": "임시상세내용6"
+  },
+  {
+    "id": "7",
+    "imageUrl": "https://i.pravatar.cc/200?img=7",
+    "price": 56000,
+    "title": "임시상품7",
+    "description": "임시상세내용7"
+  },
+  {
+    "id": "8",
+    "imageUrl": "https://i.pravatar.cc/200?img=8",
+    "price": 57000,
+    "title": "임시상품8",
+    "description": "임시상세내용8"
+  },
+  {
+    "id": "9",
+    "imageUrl": "https://i.pravatar.cc/200?img=9",
+    "price": 58000,
+    "title": "임시상품9",
+    "description": "임시상세내용9"
+  },
+  {
+    "id": "10",
+    "imageUrl": "https://i.pravatar.cc/200?img=10",
+    "price": 59000,
+    "title": "임시상품10",
+    "description": "임시상세내용10"
+  },
+  {
+    "id": "11",
+    "imageUrl": "https://i.pravatar.cc/200?img=11",
+    "price": 60000,
+    "title": "임시상품11",
+    "description": "임시상세내용11"
+  },
+  {
+    "id": "12",
+    "imageUrl": "https://i.pravatar.cc/200?img=12",
+    "price": 61000,
+    "title": "임시상품12",
+    "description": "임시상세내용12"
+  },
+  {
+    "id": "13",
+    "imageUrl": "https://i.pravatar.cc/200?img=13",
+    "price": 62000,
+    "title": "임시상품13",
+    "description": "임시상세내용13"
+  },
+  {
+    "id": "14",
+    "imageUrl": "https://i.pravatar.cc/200?img=14",
+    "price": 63000,
+    "title": "임시상품14",
+    "description": "임시상세내용14"
+  },
+  {
+    "id": "15",
+    "imageUrl": "https://i.pravatar.cc/200?img=15",
+    "price": 64000,
+    "title": "임시상품15",
+    "description": "임시상세내용15"
+  },
+  {
+    "id": "16",
+    "imageUrl": "https://i.pravatar.cc/200?img=16",
+    "price": 65000,
+    "title": "임시상품16",
+    "description": "임시상세내용16"
+  },
+  {
+    "id": "17",
+    "imageUrl": "https://i.pravatar.cc/200?img=17",
+    "price": 66000,
+    "title": "임시상품17",
+    "description": "임시상세내용17"
+  },
+  {
+    "id": "18",
+    "imageUrl": "https://i.pravatar.cc/200?img=18",
+    "price": 67000,
+    "title": "임시상품18",
+    "description": "임시상세내용18"
+  },
+  {
+    "id": "19",
+    "imageUrl": "https://i.pravatar.cc/200?img=19",
+    "price": 68000,
+    "title": "임시상품19",
+    "description": "임시상세내용19"
+  },
+  {
+    "id": "20",
+    "imageUrl": "https://i.pravatar.cc/200?img=20",
+    "price": 69000,
+    "title": "임시상품20",
+    "description": "임시상세내용20"
+  }
+]

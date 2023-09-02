@@ -10,12 +10,12 @@ const queryOption = {
 };
 
 const Cart = () => {
-  const { data } = useQuery(
+  const { data } = useQuery<{ cart: CartType }>(
     QueryKeys.CART,
-    () => graphqlFetcher(GET_CART),
+    () => graphqlFetcher<{ cart: CartType }>(GET_CART),
     queryOption
   );
-  const cartItems = Object.values(data || {}) as CartType[];
+  const cartItems = (data?.cart || []) as CartType[];
 
   return cartItems.length ? (
     <CartList items={cartItems} />

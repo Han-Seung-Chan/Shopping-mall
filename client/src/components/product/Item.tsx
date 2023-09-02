@@ -3,11 +3,10 @@ import { useMutation } from 'react-query';
 import { graphqlFetcher } from '../../queryClient';
 import { ADD_CART } from '../../graphql/cart';
 import { ProductType } from '../../types/productType';
-import { CartType } from '../../types/cartType';
 
 const ProductItem = ({ id, imageUrl, price, title }: ProductType) => {
   const { mutate: addCart } = useMutation((id: string) =>
-    graphqlFetcher<CartType>(ADD_CART, { id })
+    graphqlFetcher(ADD_CART, { id })
   );
 
   return (

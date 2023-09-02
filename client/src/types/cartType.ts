@@ -1,10 +1,10 @@
-export interface CartType {
+import { ProductType } from './productType';
+
+export type CartType = {
   id: string;
-  imageUrl: string;
-  price: number;
-  title: string;
   amount: number;
-}
+  product: ProductType;
+};
 
 export interface CartTypeIndexSignature {
   [key: string]: CartType;

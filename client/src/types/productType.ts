@@ -4,7 +4,7 @@ export interface ProductType {
   price: number;
   title: string;
   description: string;
-  createdAt: string;
+  createdAt: number;
 }
 
 export interface ProductsType {

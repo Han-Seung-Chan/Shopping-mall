@@ -14,14 +14,12 @@ const Payment = () => {
   const [checkedCartData, setCheckedCartData] =
     useRecoilState(checkedCartState);
 
-  const { mutate: executePay } = useMutation((payInfos: string[]) =>
-    graphqlFetcher(EXECUTE_PAY, payInfos)
+  const { mutate: executePay } = useMutation((ids: string[]) =>
+    graphqlFetcher(EXECUTE_PAY, { ids })
   );
 
   const showModal = () => toggleModal(true);
-
   const cancel = () => toggleModal(false);
-
   const proceed = () => {
     const payInfos = checkedCartData.map(({ id }) => id);
     executePay(payInfos);

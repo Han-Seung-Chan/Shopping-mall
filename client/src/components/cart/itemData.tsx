@@ -1,10 +1,10 @@
-import { CartType } from '../../types/cartType';
+import { ProductType } from '../../types/productType';
 
 const ItemData = ({
   imageUrl,
   price,
   title,
-}: Pick<CartType, 'imageUrl' | 'price' | 'title'>) => (
+}: Pick<ProductType, 'imageUrl' | 'price' | 'title'>) => (
   <>
     <img className="cart-item__image" src={imageUrl} />
     <p className="cart-item__price">{price}</p>
