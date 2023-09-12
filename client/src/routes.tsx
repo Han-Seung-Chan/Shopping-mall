@@ -4,7 +4,7 @@ import ProductsListPage from './pages/products/list';
 import ProductsDetailPage from './pages/products/[id]';
 import CartList from './pages/cart/index';
 import PaymentPage from './pages/payment/index';
-
+import AdminIndex from './pages/admin/index';
 export const routes = [
   {
     path: '/',
@@ -15,6 +15,7 @@ export const routes = [
       { path: '/products/:id', element: <ProductsDetailPage /> },
       { path: '/cart', element: <CartList />, index: true },
       { path: '/payment', element: <PaymentPage />, index: true },
+      { path: '/admin', element: <AdminIndex />, index: true },
     ],
   },
 ];
@@ -25,4 +26,5 @@ export const pages = [
   { route: '/products/:id' },
   { route: '/cart' },
   { route: '/payment' },
+  { route: '/admin' },
 ];

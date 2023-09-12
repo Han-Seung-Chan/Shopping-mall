@@ -6,9 +6,11 @@ const cartSchema = gql`
     amount: Int!
     product: Product!
   }
+
   extend type Query {
     cart: [CartItem!]
   }
+
   extend type Mutation {
     addCart(id: ID!): CartItem!
     updateCart(id: ID!, amount: Int!): CartItem!
